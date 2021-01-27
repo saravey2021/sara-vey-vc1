@@ -1,112 +1,116 @@
 *{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Khumh sans' sans-serif;
-    scroll-behavior: smooth;
-  }
-  .navbar{
-    background: white;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-    position: sticky;
-    top: 0;
-    z-index: 999;
-  }
-  .navbar_container{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Khumh sans' sans-serif;
+  scroll-behavior: smooth;
+}
+.navbar{
+  background: white;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+.navbar_container{
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+#navbar_logo{
+  color: black;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 20px;
+  margin-top: 5px;
+  padding-left: 28px;
+  font-family: Madefor,Helvetica Neue,Helvetica,Arial,メイリオ,meiryo,ヒラギノ角ゴ pro w3,hiragino kaku gothic pro,sans-serif;
+}
+.navbar_menu{
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.navbar_item{
+  height: 80px;
+}
+.navbar_links{
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  text-decoration: none;
+  height: 100%;
+  float: right;
+  margin: 5px;
+  text-transform: uppercase;
+  margin-top: 5px;
+  font-size: 12px;
+  font-family: Madefor,Helvetica Neue,Helvetica,Arial,メイリオ,meiryo,ヒラギノ角ゴ pro w3,hiragino kaku gothic pro,sans-serif;
+}
+.navbar_links:hover{
+  color: #9518fc;
+  transition: all 0.3s ease;
+}
+#navbar_logo:hover{
+  color: red;
+  transition: all 0.3s ease;
+}
+@media screen and(max-width: 960px){
+.navbar_container{
     display: flex;
     justify-content: space-between;
     height: 80px;
-    
+    z-index: 1;
     width: 100%;
     max-width: 1300px;
-    margin: 0 auto;
-    padding: 0 50px;
-  }
-  #navbar_logo{
-    color: black;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 20px;
-    margin-top: 5px;
-    padding-left: 28px;
-    font-family: Madefor,Helvetica Neue,Helvetica,Arial,メイリオ,meiryo,ヒラギノ角ゴ pro w3,hiragino kaku gothic pro,sans-serif;
-  }
-  .navbar_menu{
-    display: flex;
-    align-items: center;
-    list-style: none;
-  }
-  .navbar_item{
-    height: 80px;
-  }
-  .navbar_links{
-    color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    text-decoration: none;
-    height: 100%;
-    float: right;
-    margin: 5px;
-    text-transform: uppercase;
-    margin-top: 5px;
-    font-size: 12px;
-    font-family: Madefor,Helvetica Neue,Helvetica,Arial,メイリオ,meiryo,ヒラギノ角ゴ pro w3,hiragino kaku gothic pro,sans-serif;
-  }
-  .navbar_links:hover{
-    color: #9518fc;
-    transition: all 0.3s ease;
-  }
-  #navbar_logo:hover{
-    color: red;
-    transition: all 0.3s ease;
-  }
-@media screen and(max-width: 960px){
-  .navbar_container{
-      display: flex;
-      justify-content: space-between;
-      height: 80px;
-      z-index: 1;
-      width: 100%;
-      max-width: 1300px;
-      padding: 0;
-  }
-  .navbar_menu{
-    display: grid;
-    grid-template-columns: auto;
-    margin: 0;
-    width: 100%;
-    position: absolute;
-    top: -1000px;
-    opacity: 1;
-    transition: all 0.5s ease;
-    z-index: -1;
-  }
-  .navbar_menu.active{
-    background: white;
-    top: 100%;
-    opacity: 1;
-    transition: all 0.5s ease;
-    z-index: 99;
-    height: 50vh;
-    font-size: 1.6rem;
-  }
-  .navbar_item{
-    width: 100%;
-    width: 100%;
-    display: table;
-  }
-  #mobile-menu{
-    position: absolute;
-    top: 20%;
-    right: 5%;
-    transform: translate(5%,20%);
-  }
+    padding: 0;
+}
+.navbar_menu{
+  display: grid;
+  grid-template-columns: auto;
+  margin: 0;
+  width: 100%;
+  position: absolute;
+  top: -1000px;
+  opacity: 1;
+  transition: all 0.5s ease;
+  z-index: -1;
+}
+.navbar_menu.active{
+  background: white;
+  top: 100%;
+  opacity: 1;
+  transition: all 0.5s ease;
+  z-index: 99;
+  height: 50vh;
+  font-size: 1.6rem;
+}
+.navbar_item{
+  width: 100%;
+  width: 100%;
+  display: table;
+}
+#mobile-menu{
+  position: absolute;
+  top: 20%;
+  right: 5%;
+  transform: translate(5%,20%);
+}
+}
+
+.text{
+  width: 10px;
 }
