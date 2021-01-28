@@ -126,7 +126,11 @@
 * {
   box-sizing: border-box;
 }
-
+button{
+  background: rgb(31, 32, 110);
+  width: 150px;
+  height: 35px;
+}
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -238,6 +242,7 @@ th, td {
 
 .boy{
   text-align: center;
+  
 }
 
 
