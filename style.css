@@ -111,7 +111,7 @@
 }
 }
 
-
+/* exper */
 
 * {
   box-sizing: border-box;
@@ -160,7 +160,7 @@ section::after {
 img{
   margin-left: 0%;
   width: 100%;
-  height: 330px;
+  height: 300px;
 
   
 }
@@ -217,6 +217,9 @@ th, td {
 .context{
   background-color: #d2d0d4;
   height: 180px;
+}
+.boy{
+  text-align: center;
 }
 
 
