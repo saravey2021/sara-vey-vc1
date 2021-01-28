@@ -1,172 +1,58 @@
-*{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: 'Khumh sans' sans-serif;
-  scroll-behavior: smooth;
+nav{
+  height: 478px;
+  width: 100%;
+  background-image: url('https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_796,h_448/https://techuncode.com/wp-content/uploads/2020/09/what-is-a-computer-algorithm.jpg');
+  background-size: cover;
+
 }
-.navbar{
-  background: white;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.2rem;
-  position: sticky;
-  top: 0;
-  z-index: 999;
-}
-.navbar_container{
-  display: flex;
-  justify-content: space-between;
-  height: 80px;
+label.logo{
+  color: rgb(0, 0, 0);
+  font-size: 25px;
+  padding: 0 100px;
+  line-height: 80px;
+  font-weight: bold;
+  color: white;
   
-  width: 100%;
-  max-width: 1300px;
-  margin: 0 auto;
-  padding: 0 50px;
 }
-
-#navbar_logo{
-  color: black;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 20px;
-  margin-top: 5px;
-  padding-left: 28px;
-  fontfamily: Madefor,Helvetica Neue,Helvetica,Arial,メイリオ,meiryo,ヒラギノ角ゴ pro w3,hiragino kaku gothic pro,sans-serif;
-}
-.navbar_menu{
-  display: flex;
-  align-items: center;
-  list-style: none;
-}
-
-.navbar_item{
-  height: 80px;
-}
-
-.navbar_links{
-  color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100px;
-  text-decoration: none;
-  height: 100%;
+nav ul{
   float: right;
-  margin: 5px;
+  margin-right:50px ;
+  
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin:0 5px;
+}
+nav ul li a{
+  color: rgb(255, 255, 255);
+  font-size: 17px;
   text-transform: uppercase;
-  margin-top: 5px;
-  font-size: 12px;
-  font-family: Madefor,Helvetica Neue,Helvetica,Arial,メイリオ,meiryo,ヒラギノ角ゴ pro w3,hiragino kaku gothic pro,sans-serif;
+  padding: 8px;
+  border-radius: 3px;
+  text-decoration: none;
+}
+a:hover{
+  background: rgb(11, 33, 104);
+  transition: .5s;
 }
 
-.navbar_links:hover{
-  color: #9518fc;
-  transition: all 0.3s ease;
-}
 
-#navbar_logo:hover{
-  color:  #9518fc;
-  transition: all 0.3s ease;
-}
 
-@media screen and(max-width: 960px){
-.navbar_container{
-    display: flex;
-    justify-content: space-between;
-    height: 80px;
-    z-index: 1;
-    width: 100%;
-    max-width: 1300px;
-    padding: 0;
-}
 
-.navbar_menu{
-  display: grid;
-  grid-template-columns: auto;
-  margin: 0;
-  width: 100%;
-  position: absolute;
-  top: -1000px;
-  opacity: 1;
-  transition: all 0.5s ease;
-  z-index: -1;
-}
 
-.navbar_menu.active{
-  background: white;
-  top: 100%;
-  opacity: 1;
-  transition: all 0.5s ease;
-  z-index: 99;
-  height: 50vh;
-  font-size: 1.6rem;
-}
-
-.navbar_item{
-  width: 100%;
-  width: 100%;
-  display: table;
-}
-
-#mobile-menu{
-  position: absolute;
-  top: 20%;
-  right: 5%;
-  transform: translate(5%,20%);
- }
-}
-
-/* exper */
 
 * {
   box-sizing: border-box;
 }
-button{
-  background: rgb(31, 32, 110);
-  width: 150px;
-  height: 35px;
-}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
-}
-
-.word {
-  float: left;
-  width: 30%;
-  height: 300px; 
-  background: #ccc;
-  padding: 20px;
 }
 
 nav ul {
   list-style-type: none;
   padding: 0;
-}
-
-article {
-  float: left;
-  padding: 20px;
-  width: 70%;
-  background-color: #f1f1f1;
-  height: 300px; 
-}
-
-section::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-@media (max-width: 600px) {
-  nav, article {
-    width: 100%;
-    height: auto;
-  }
 }
 
 .header1{
@@ -181,94 +67,69 @@ section::after {
 img{
   margin-left: 0%;
   width: 100%;
-  height: 325px;
-}
-
-.text{
-margin-left: 50%;
-}
-
-* {
-box-sizing: border-box;
+  height: 350px;
 }
 
 .column {
-float: left;
-width: 50%;
-padding: 10px;
-height: 370px; 
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 370px; 
 }
 
-.row:after {
-content: "";
-display: table;
-clear: both;
-}
-
-h2{
-text-align: center;
-}
 
 main{
-background: rgb(35, 23, 66);
-height: 8vh;
-padding: 5px;
-display: flex;
-justify-content: center;
-align-items: center;
-color: white;
-}
-
-.add{
-  font-size: 20px;
-  text-align: center;
-  margin-top: 60px;
+  background: rgb(35, 23, 66);
+  height: 10vh;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-top: -300px;
 }
 
 table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
 }
-
-th, td {
-  padding: 5px;
-  text-align: left;    
-}
-
-.context{
-  background-color: #d2d0d4;
-  height: 180px;
-}
+        
 
 .boy{
-  text-align: center;
-  
+  background: rgb(201, 199, 199);
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  margin-right: -345px;
+  margin-left: -345px;
+
+}
+p{
+  margin-top: 80px;
 }
 
+/* exper and education */
+        
 
-
-
-
-
-/* endu */
+h1{
+  text-align: center;
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+  *{
+      margin: 0;
+      padding: 0;
+      font-family: 'Monsterrat', sans-serif;
+  }
 
-*{
-  margin: 0;
-  padding: 0;
-  font-family: 'Monsterrat', sans-serif;
-}
-h1{
-  padding: 20px;
-  text-align: center;
-}
 .timeline{
   position: relative;
   margin: 50px auto;
   padding: 40px 0;
   width: 1000px;
-  top: -60px;
+  top: 170px;
   box-sizing: border-box;
 }
 .timeline:before{
@@ -364,13 +225,100 @@ h1{
 }
 
 
+/* skills */
+
+.top-ads{
+  margin-left: -100px;
+  margin-right: -50px ;
+  height: 50px;
+}
+.top-ads .slider figure img{
+  float: left;
+  width: 100%;
+  height: 200px;
+}
+
+.top-ads img{
+  float: right;
+}
+
+.top-ads .slider{
+  overflow: hidden;
+}
+.top-ads .slider figure div{
+  float: left;
+  width: 20%;
+}
+.top-ads .slider figure{
+  position: relative;
+  width: 500%;
+  margin: 0px;
+  left: 0;
+  animation: 20s ravi infinite;
+}
+@keyframes ravi{
+  0%{
+left: 0%;
+  }
+  10%{
+left: 0%;
+  }
+  12%{
+left: -100%;
+  }
+  22%{
+left: -100%;
+  }
+  24%{
+left: -200%;
+  }
+  34%{
+left: -200%;
+  }
+  36%{
+left: -300%;
+  }
+  46%{
+left: -300%;
+  }
+  48%{
+left: -400%;
+  }
+  58%{
+left: -400%;
+  }
+  60%{
+left: -300%;
+  }
+  70%{
+left: -300%;
+  }
+  72%{
+left: -200%;
+  }
+  82%{
+left: -200%;
+  }
+  84%{
+left: -100%;
+  }
+  94%{
+left: -100%;
+  }
+  96%{
+left: 0%;
+  }
+}
+.text{
+  background-color: red;
+  
+  height: 400px;
+  margin-right: -100px;
+  margin-left: -100px;
+}
 
 
-
-
-
-
-/* cont */
+/* content */
 
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -437,110 +385,5 @@ iframe{
 }
 
 
-
-/* skills */
-
-.boy{
-  background: rgb(35, 23, 66);
-  height: 20vh;
-  padding: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  margin-right: 300px;
-  margin-left: 300px;
-  
-}
-
-
-footer{
-  background: rgb(160, 160, 165);
-  height: 80vh;
-  margin-top: 330px;
-  text-align: center;
-  justify-content: center;
-  font-size: 20px;
-  font-family: sans-serif;
-  display: flex;
-
-}
-
-.top-ads{
-  width: 100%;
-  float: left;
-
-  
-}
-
-
-.top-ads .slider{
-  overflow: hidden;
-}
-.top-ads .slider figure div{
-  float: left;
-  width: 20%;
-}
-
-.top-ads .slider figure{
-  position: relative;
-  width: 500%;
-  margin: 0px;
-  left: 0;
-  animation: 20s ravi infinite;
-}
-@keyframes ravi{
-  0%{
-left: 0%;
-  }
-  10%{
-left: 0%;
-  }
-  12%{
-left: -100%;
-  }
-  22%{
-left: -100%;
-  }
-  24%{
-left: -200%;
-  }
-  34%{
-left: -200%;
-  }
-  36%{
-left: -300%;
-  }
-  46%{
-left: -300%;
-  }
-  48%{
-left: -400%;
-  }
-  58%{
-left: -400%;
-  }
-  60%{
-left: -300%;
-  }
-  70%{
-left: -300%;
-  }
-  72%{
-left: -200%;
-  }
-  82%{
-left: -200%;
-  }
-  84%{
-left: -100%;
-  }
-  94%{
-left: -100%;
-  }
-  96%{
-left: 0%;
-  }
-}
 
 
