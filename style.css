@@ -3,7 +3,12 @@ nav{
   width: 100%;
   background-image: url('https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_796,h_448/https://techuncode.com/wp-content/uploads/2020/09/what-is-a-computer-algorithm.jpg');
   background-size: cover;
-  
+}
+
+.head{
+  position: sticky;
+  top: -1;
+ 
 }
 
 label.logo{
@@ -36,6 +41,7 @@ a:hover{
   background: rgb(11, 33, 104);
   transition: .5s;
 }
+
 * {
   box-sizing: border-box;
 }
@@ -104,7 +110,6 @@ h1{
       padding: 0;
       font-family: 'Monsterrat', sans-serif;
   }
-
 .timeline{
   position: relative;
   margin: 50px auto;
@@ -287,16 +292,66 @@ left: -100%;
 left: 0%;
   }
 }
-
 .text{
-  background-color:  rgb(238, 238, 241);
-  height: 400px;
-  
+  background-color:  #f2f2f2;
+  height: 305px;
+  text-align: center;
+}
+.b{
+  background: rgb(204, 202, 204);
+  height: 50px;
+  margin-left: 450px;
+  padding: 20px;
+  margin-right: 40px;
+  border-radius: 30px;
+  font-size: 18px;
+}
+.c{
+  margin-left: 40px;
+  background: rgb(204, 202, 204);
+  margin-right: 450px;
+  margin-top: -135px;
+  height: 50px;
+  padding: 20px;
+  border-radius: 30px;
+  font-size: 18px;
+}
+.d{
+  background: rgb(204, 202, 204);
+  margin-right: 450px;
+  margin-left: 40px;
+  padding: 23px;
+  margin-top: 38px;
+  border-radius: 30px;
+  height: 50px;
+  font-size: 18px;
+
+}
+.f{
+  background: rgb(204, 202, 204);
+  margin-right: 200px;
+  margin-left: 200px;
+  padding: 23px;
+  margin-top: 38px;
+  border-radius: 30px;
+  height: 50px;
+  font-size: 18px;
 }
 
+.text h2:hover{
+  background-color:rgb(48, 45, 245);
+  animation: 0.8s;
+}
+
+@media(max-width:600px){
+  .text{
+    display: flex;
+    flex-direction: column;
+  }
+}
 /* content */
 
-body {
+body{
   font-family: Arial, Helvetica, sans-serif;
 }
 * {
@@ -326,8 +381,6 @@ input[type=submit]:hover {
   border-radius: 5px;
   background-color: #f2f2f2;
   height: 650px;
- 
- 
 }
 .column {
   float: left;
@@ -338,7 +391,6 @@ input[type=submit]:hover {
   content: "";
   display: table;
   clear: both;
- 
 }
 @media screen and (max-width: 600px) {
   .column, input[type=submit] {
@@ -350,8 +402,6 @@ iframe{
   margin-top: 10px;
 }
 
-
-
 /* fac */
 
 .fa {
@@ -361,7 +411,6 @@ iframe{
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
- 
 }
 
 .fa:hover {
@@ -473,3 +522,16 @@ iframe{
   background: #ff6600;
   color: white;
 }
+
+h1{
+  color:rgb(58, 3, 109);
+  text-shadow:2px 2px 3px #010172;
+  text-align:center;
+  font-size:29px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+  
+
