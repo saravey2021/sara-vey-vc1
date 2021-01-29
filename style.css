@@ -1,13 +1,9 @@
-nav{
-  height: 486px;
+.head{
+  height: 650px;
   width: 100%;
   background-image: url('https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_796,h_448/https://techuncode.com/wp-content/uploads/2020/09/what-is-a-computer-algorithm.jpg');
   background-size: cover;
-  position: sticky;
-  top: -1;
 }
-
-
 label.logo{
   color: rgb(0, 0, 0);
   font-size: 30px;
@@ -27,7 +23,7 @@ nav ul li{
   margin:0 5px;
 }
 nav ul li a{
-  color: rgb(255, 255, 255);
+  color: rgb(240, 230, 230);
   font-size: 17px;
   text-transform: uppercase;
   padding: 8px;
@@ -38,6 +34,7 @@ a:hover{
   background: rgb(11, 33, 104);
   transition: .5s;
 }
+
 
 * {
   box-sizing: border-box;
@@ -76,77 +73,130 @@ main{
   justify-content: center;
   align-items: center;
   color: white;
-  margin-top: -300px;
+  
 }
 table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
 }
-.boy{
-  background: rgb(223, 222, 222);
-  height: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: black;
-  margin-right: -345px;
-  margin-left: -345px;
-}
+
 p{
   margin-top: 40px;
 }
 
-/* exper and education */
+/* exper */
         
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-style: 'Poppins', sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.container {
+  position: relative;
+  display: flex;
+  width: 1100px;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .card {
+  position: relative;
+  width: 500px;
+  cursor: pointer;
+  margin-right: 340px;
+  margin-left: -75px;
+}
+.container .card .name {
+  position: relative;
+  padding: 10px 0;
+  border: 2px solid #000;
+  text-align: center;
+  background: #fff;
+  z-index: 1;
+}
+.container .card .name h3 {
+  font-weight: 600;
+  font-size: 1.5em;
+}
+.container .card .details {
+  position: relative;
+  top: -2px;
+  text-align: center;
+  height: 0;
+  transition: 0.5s;
+  border: 2px solid #000;
+  margin-top: -2px;
+  overflow: hidden;
+}
+.container .card:hover .details {
+  height: 550px;
+}
+.container .card .details .content {
+  position: relative;
+  padding: 40px 20px;
+}
+
+.container .card:nth-child(1) .name {
+  background: #d2fff2;
+}
+.container .card:nth-child(2) .name {
+  background: #fcffd2;
+}
+
+/* edu */
+
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Monsterrat', sans-serif;
+}
 h1{
+  padding: 20px;
   text-align: center;
 }
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
-  *{
-      margin: 0;
-      padding: 0;
-      font-family: 'Monsterrat', sans-serif;
-  }
 .timeline{
   position: relative;
   margin: 50px auto;
   padding: 40px 0;
   width: 1000px;
-  top: 170px;
+  top: -60px;
   box-sizing: border-box;
+  margin-left: -150px;
 }
 .timeline:before{
-  content: '';
-  position: absolute;
-  left: 50%;
-  width: 2px;
-  height: 77%;
-  background-color: #c5c5c5;
-}
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 2px;
+    height: 77%;
+    background-color: #2e2828;
+  }
 .timeline ul{
   margin: 0;
   padding: 0;
 }
 .timeline ul li{
-  list-style: none;
-  position: relative;
-  width: 50%;
-  padding: 20px 40px;
-  box-sizing: border-box;
-}
-.timeline ul li:nth-child(odd){
-  float: left;
-  text-align: right;
-  clear: both;
-}
+    list-style: none;
+    position: relative;
+    width: 50%;
+    padding: 20px 40px;
+    box-sizing: border-box;
+  }
+  
 .timeline ul li:nth-child(even){
-  float: right;
-  text-align: left;
-  clear: both;
-}
-.content{
-  padding-bottom: 20px;
-}
+    float: right;
+    text-align: left;
+    clear: both;
+  }
+
 .timeline ul li:nth-child(odd):before{
   content: '';
   position: absolute;
@@ -154,9 +204,9 @@ h1{
   right: -6px;
   width: 10px;
   height: 10px;
-  background: rgb(49, 49, 49);
+  background: rgb(87, 82, 83);
   border-radius: 50%;
-  box-shadow: 0 0 0 3px rgba(82, 80, 80, 0.2);
+  box-shadow: 0 0 0 3px rgba(63, 60, 61, 0.2);
 }
 .timeline ul li:nth-child(even):before{
   content: '';
@@ -165,35 +215,28 @@ h1{
   left: -4px;
   width: 10px;
   height: 10px;
-  background: black;
+  background: rgb(75, 72, 73);
   border-radius: 50%;
-  box-shadow: 0 0 0 3px rgba(117, 114, 115, 0.2);
+  box-shadow: 0 0 0 3px rgba(53, 49, 50, 0.2);
 }
 .timeline ul li h3{
   margin: 0;
   padding: 0;
   font-weight: 600;
-  color: black;
+  color: rgb(20, 15, 17);
 }
-.timeline ul li p{
-  margin: 10px 0 0;
-  padding: 0;
-}
-.timeline ul li .time h4{
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
-}
+
+
 .timeline ul li:nth-child(odd) .time{
   position: absolute;
   top: 12px;
   right: -165px;
   margin: 0;
   padding: 8px 16px;
-  background: rgb(233, 231, 232);
-  color: black;
+  background: rgb(141, 138, 139);
+  color: #fff;
   border-radius: 18px;
-  box-shadow: 0 0 0 3px rgba(112, 111, 112, 0.3);
+  box-shadow: 0 0 0 3px rgba(49, 48, 49, 0.3);
 }
 .timeline ul li:nth-child(even) .time{
   position: absolute;
@@ -201,14 +244,13 @@ h1{
   left: -165px;
   margin: 0;
   padding: 8px 16px;
-  background: rgb(216, 214, 215);
-  color: black;
+  background: rgb(116, 110, 112);
+  color: #fff;
   border-radius: 18px;
-  box-shadow: 0 0 0 3px rgba(112, 111, 112, 0.3);
+  box-shadow: 0 0 0 3px rgba(73, 72, 72, 0.3);
 }
 
 /* skills */
-
 .top-ads{
   margin-left: -100px;
   margin-right: -50px ;
@@ -290,7 +332,7 @@ left: 0%;
   }
 }
 .text{
-  background-color:  #f2f2f2;
+  background-color:  #f7f3f3;
   height: 305px;
   text-align: center;
 }
@@ -334,30 +376,25 @@ left: 0%;
   height: 50px;
   font-size: 18px;
 }
-
 .text h2:hover{
   background-color:rgb(48, 45, 245);
   animation: 0.8s;
 }
-
 @media(max-width:600px){
   .text{
     display: flex;
     flex-direction: column;
   }
 }
-/* content */
 
+/* content */
 body{
   font-family: Arial, Helvetica, sans-serif;
-}
-* {
-  box-sizing: border-box;
 }
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
-  border: 1px solid rgb(223, 220, 220);
+  border: 1px solid rgb(231, 231, 231);
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
@@ -366,24 +403,12 @@ input[type=submit] {
   background-color: #0b036d;
   color: white;
   padding: 12px 20px;
-  border: none;
-  
+  border: none; 
 }
 input[type=submit]:hover {
-  background-color: #45a049;
- 
-  
+  background-color: #45a049; 
 }
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  height: 650px;
-}
-.column {
-  float: left;
-  margin-top: 6px;
-  padding: 20px;
-}
+
 .row:after {
   content: "";
   display: table;
@@ -395,13 +420,14 @@ input[type=submit]:hover {
     margin-top: 0;
   }
 }
-iframe{
-  margin-top: 10px;
+.box{
+  background: rgb(240, 237, 237);
+  height: 600px;
 }
 
 /* fac */
 
-.fa {
+.fa{
   padding: 20px;
   font-size: 30px;
   width: 50px;
@@ -409,124 +435,35 @@ iframe{
   text-decoration: none;
   margin: 5px 2px;
 }
-
 .fa:hover {
     opacity: 0.7;
 }
-
 .fa-facebook {
-  background: #3B5998;
+  background: #031e58;
   color: white;
 }
-
 .fa-twitter {
-  background: #55ACEE;
+  background: #0bb40b;
   color: white;
 }
-
 .fa-google {
-  background: #dd4b39;
+  background: #c90000;
   color: white;
 }
-
 .fa-linkedin {
-  background: #007bb5;
+  background: #065072;
   color: white;
 }
-
-.fa-youtube {
-  background: #bb0000;
-  color: white;
-}
-
-.fa-instagram {
-  background: #125688;
-  color: white;
-}
-
-.fa-pinterest {
-  background: #cb2027;
-  color: white;
-}
-
-.fa-snapchat-ghost {
-  background: #fffc00;
-  color: white;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
-
 .fa-skype {
-  background: #00aff0;
+  background: #03a5ce;
   color: white;
 }
-
-.fa-android {
-  background: #a4c639;
-  color: white;
-}
-
-.fa-dribbble {
-  background: #ea4c89;
-  color: white;
-}
-
-.fa-vimeo {
-  background: #45bbff;
-  color: white;
-}
-
-.fa-tumblr {
-  background: #2c4762;
-  color: white;
-}
-
-.fa-vine {
-  background: #00b489;
-  color: white;
-}
-
-.fa-foursquare {
-  background: #45bbff;
-  color: white;
-}
-
-.fa-stumbleupon {
-  background: #eb4924;
-  color: white;
-}
-
-.fa-flickr {
-  background: #f40083;
-  color: white;
-}
-
-.fa-yahoo {
-  background: #430297;
-  color: white;
-}
-
-.fa-soundcloud {
-  background: #ff5500;
-  color: white;
-}
-
-.fa-reddit {
-  background: #ff5700;
-  color: white;
-}
-
-.fa-rss {
-  background: #ff6600;
-  color: white;
-}
-
 h1{
   color:rgb(58, 3, 109);
   text-shadow:2px 2px 3px #010172;
   text-align:center;
   font-size:29px;
 }
-
 html {
   scroll-behavior: smooth;
 }
