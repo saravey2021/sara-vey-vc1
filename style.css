@@ -6,7 +6,8 @@ html {
 .head{
   height: 625px;
   width: 100%;
-  background-image: url('https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_796,h_448/https://techuncode.com/wp-content/uploads/2020/09/what-is-a-computer-algorithm.jpg');
+  background-image: 
+  url('https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_796,h_448/https://techuncode.com/wp-content/uploads/2020/09/what-is-a-computer-algorithm.jpg');
   background-size: cover; 
 }
 .word{
@@ -468,13 +469,17 @@ h1{
 @media(max-width: 600px){
   nav ul li{
     display: block;
+
   }
   .header1{
-    width: 100%;
+    width: 50%;
     
   }
   .container{
     display: block;
+  }
+  .head{
+    width: 100%;
   }
 }
 
