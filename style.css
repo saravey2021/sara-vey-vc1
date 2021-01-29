@@ -61,19 +61,20 @@ nav ul {
   color:black;
   background-color: none;
   position: absolute;
-  top: 21%;
+  top: 24%;
   left: 25%;  
+ 
 }
 img{
   margin-left: 0%;
   width: 100%;
-  height: 350px;
+  height: 320px;
 }
 .column {
   float: left;
   width: 50%;
   padding: 10px;
-  height: 370px;
+  height: 330px;
 }
 main{
   background: rgb(8, 30, 92);
@@ -149,10 +150,10 @@ body {
   padding: 40px 20px;
 }
 .container .card:nth-child(1) .name {
-  background: #f8abb2;
+  background: #f3b0b6;
 }
 .container .card:nth-child(2) .name {
-  background: #8493d8;
+  background: #9baaec;
 }
 /* education */
 
