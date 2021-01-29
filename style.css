@@ -76,7 +76,7 @@ img{
   height: 370px;
 }
 main{
-  background: rgb(35, 23, 66);
+  background: rgb(8, 30, 92);
   height: 10vh;
   padding: 5px;
   display: flex;
@@ -149,10 +149,10 @@ body {
   padding: 40px 20px;
 }
 .container .card:nth-child(1) .name {
-  background: #d2fff2;
+  background: #f8abb2;
 }
 .container .card:nth-child(2) .name {
-  background: #fcffd2;
+  background: #8493d8;
 }
 /* education */
 
@@ -453,27 +453,20 @@ h1{
   text-align:center;
   font-size:29px;
 }
-
-/* con */
-
 @media screen and (max-width: 600px) {
   .column, input[type=submit] {
     width: 100%;
     margin-top: 0;
   }
 }
-
-
-
 /* responsive */
+
 @media(max-width: 600px){
   nav ul li{
     display: block;
-
   }
   .header1{
     width: 50%;
-    
   }
   .container{
     display: block;
